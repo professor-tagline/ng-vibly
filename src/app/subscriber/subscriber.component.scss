@@ -1,0 +1,22 @@
+
+.subscriber-wrap {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.subscriber-wrap h5 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.subscriber-table {
+    border: 1px solid #ddd;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.subscriber-table td,.subscriber-table th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}

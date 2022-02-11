@@ -1,5 +1,15 @@
-<p>subscriber works!</p>
-
-<div *ngFor="let subscriber of subscriberList">
- <p>{{subscriber}}</p>
+<div class="subscriber-wrap">
+    <h5>subscriber list</h5>
+    <table class="subscriber-table" [cellPadding]="0" [cellSpacing]="0">
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let subscriber of subscriberList;  let i = index">
+                <td><span>{{i + 1}}</span></td>
+                <td>{{subscriber}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
