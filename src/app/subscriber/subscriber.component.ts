@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscriberComponent implements OnInit {
 
-  constructor() { }
+  public subscriberList = [];
+  constructor() { 
+    this.subscriberList = JSON.parse(localStorage.getItem("subscriberList")) || [];
+  }
 
   ngOnInit(): void {
   }

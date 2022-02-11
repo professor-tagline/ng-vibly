@@ -142,7 +142,8 @@
   
   
   .footer .footer-row .company-info .footer-text {
-    max-width: 542px;
+    max-width: 582px;
+    padding-right: 40px;
   }
   
   .footer .footer-row .company-info .footer-text p {
@@ -330,7 +331,7 @@
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .comman_btn {
       padding: 8px 20px;
     }
@@ -340,7 +341,7 @@
     }
   
     .footer .footer-row .company-info .footer-logo {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
   
     .footer .footer-row .company-info .footer-logo img {
@@ -362,6 +363,10 @@
   
     .footer .footer-row .newsletter-section .form-row input {
       font-size: 14px;
+    }
+    .footer .footer-row .company-info .footer-text {
+      padding-right: 0;
+      max-width: 100%;
     }
   }
   
