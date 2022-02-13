@@ -1,27 +1,18 @@
-# Vibly
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+# Vibly Demo
 
 ## Development server
+- Open a new terminal and run `ng serve` command to run the application in local environment. Navigate to `http://localhost:4200/` to check the angular app changes/output.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## URL
+- Navigate to below url to check the output.
+- `http://localhost:4200/footer` -> To see the main footer page
+- `http://localhost:4200/subscriber` -> To see the subscriber list
 
-## Code scaffolding
+## Run on Stackblitz
+- Visit the URL and you can run this repo on Stackblitz. UR:- `https://stackblitz.com/github/professor-tagline/ng-vibly`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Running Unit tests
+- Open a new terminal and run `ng test` command to execute the unit testing.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Running End-to-End tests
+- Open a new terminal and run `ng e2e` command to execute the end-to-end tests.
