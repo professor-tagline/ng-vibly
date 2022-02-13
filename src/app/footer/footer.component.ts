@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'vibly-footer',
@@ -7,26 +6,20 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  @ViewChild('subscribeForm') subscribeForm!: NgForm;
-
-  public viblyGoal: string = '';
+  private emailPattern: string = '^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$';
+  public subscriberEmail: string = '';
 
   constructor() { }
 
-  ngOnInit(): void {  }
+  ngOnInit(): void { }
 
-  /**
-   * submit
-   */
-  public subscribehandler() {
-    console.log('this.subscribeForm.valid', this.subscribeForm.valid);
-    if (this.subscribeForm.valid) {
-      const subscriberEmail =  this.subscribeForm.value.emailId;     
+  public subscribehandler(): void {
+    if (this.subscriberEmail.match(this.emailPattern)) {
       const storedEmail = JSON.parse(localStorage.getItem("subscriberList")) || [];
-      storedEmail.push(subscriberEmail);
+      storedEmail.push(this.subscriberEmail);
       localStorage.setItem("subscriberList", JSON.stringify(storedEmail));
-      this.subscribeForm.reset();
-    } else{
+      this.subscriberEmail = '';
+    } else {
       alert('Please enter valid emailId');
     }
   }

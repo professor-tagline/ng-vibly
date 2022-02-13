@@ -58,7 +58,7 @@
                     <h6 class="letter-title">Subscribe to our newsletter</h6>
                     <form #subscribeForm="ngForm">
                         <div class="form-row">
-                            <input type="text" placeholder="Email address" id="emailId" name="emailId" ngModel #emailId="ngModel" required minlength="3">
+                            <input type="text" placeholder="Email address" id="emailId" name="emailId" [(ngModel)]="subscriberEmail" required/>
                             <button type="button" class="comman_btn" (click)="subscribehandler()">Subscribe</button>
                         </div>
                     </form>
@@ -77,10 +77,10 @@
                 </div>
                 <ul class="tearms-wrapper">
                     <li>
-                        <a href="#">Terms & Conditions</a>
+                        <a id="termsAndConditions" href="#">Terms & Conditions</a>
                     </li>
                     <li>
-                        <a href="#">Privacy Policy</a>
+                        <a id="privacyPolicy" href="#">Privacy Policy</a>
                     </li>
                 </ul>
             </div>
