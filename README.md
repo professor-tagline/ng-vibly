@@ -9,7 +9,7 @@
 - `http://localhost:4200/subscriber` -> To see the subscriber list
 
 ## Run on Stackblitz
-- Visit the URL and you can run this repo on Stackblitz. UR:- `https://stackblitz.com/github/professor-tagline/ng-vibly`.
+- Visit the URL and you can run this repo on Stackblitz. URL:- `https://stackblitz.com/github/professor-tagline/ng-vibly`.
 
 ## Running Unit tests
 - Open a new terminal and run `ng test` command to execute the unit testing.
