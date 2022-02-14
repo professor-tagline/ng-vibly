@@ -35,8 +35,8 @@ describe('SubscriberComponent', () => {
     const emailIds = ['email@gmail.com', 'parth@gmail.com'];
     localStorage.setItem('subscriberList', JSON.stringify(emailIds));
 
-    const data = compiled.querySelectorAll('.subscriber-wrap tr td');
-
+    fixture.detectChanges();
+    const data = compiled.querySelectorAll('#subscriberEmailList td');
     const localstorageEmailDetails:any = [];
     data.forEach(element => {
       localstorageEmailDetails.push(element.textContent);
