@@ -56,10 +56,10 @@
             <div class="col-md-6">
                 <div class="newsletter-section">
                     <h6 class="letter-title">Subscribe to our newsletter</h6>
-                    <form #subscribeForm="ngForm">
+                    <form>
                         <div class="form-row">
                             <input type="text" placeholder="Email address" id="emailId" name="emailId" [(ngModel)]="subscriberEmail" required/>
-                            <button type="button" class="comman_btn" (click)="subscribehandler()">Subscribe</button>
+                            <button type="button" id="subscribeButton" class="comman_btn" (click)="subscribehandler()">Subscribe</button>
                         </div>
                     </form>
                 </div>

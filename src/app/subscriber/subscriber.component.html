@@ -6,8 +6,8 @@
             <th>Email</th>
         </tr>
         <tbody>
-            <tr *ngFor="let subscriber of subscriberList;  let i = index">
-                <td><span>{{i + 1}}</span></td>
+            <tr *ngFor="let subscriber of subscriberList;  let i = index" id="subscriberEmailList">
+                <td>{{i + 1}}</td>
                 <td>{{subscriber}}</td>
             </tr>
         </tbody>
